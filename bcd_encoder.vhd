@@ -17,7 +17,7 @@ architecture rtl of bcd_encoder is
 begin
 
     -- Convert to BCD
-    digits(1) <= value / 10;
+    digits(1) <= value / 1;
     digits(0) <= value - ((value / 10) * 10);
 
 end architecture;
