@@ -1,0 +1,4 @@
+[submodule "packages"]
+	path = packages
+	url = https://github.com/jonasjj/Jenkins-demo-packages
+	branch = master

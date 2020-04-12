@@ -6,6 +6,8 @@ library pck_lib;
 use pck_lib.types.all;
 use pck_lib.sim.all;
 
+library bcd_encoder_lib;
+
 entity bcd_encoder_tb is
 end bcd_encoder_tb; 
 
@@ -16,7 +18,7 @@ architecture sim of bcd_encoder_tb is
 
 begin
 
-  DUT : entity seg7.bcd_encoder(rtl)
+  DUT : entity bcd_encoder_lib.bcd_encoder(rtl)
   port map (
     value => value,
     digits => digits
